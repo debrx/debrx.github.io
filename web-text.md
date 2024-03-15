@@ -1,0 +1,193 @@
+# Enish
+https://www.enish.co.uk/
+*Olushda Medupin*
+
+    Nigerian rsturant
+    12 locations + yacht experience dubai
+    
+    Welcome to Enish Nigerian Restaurant, where we've been serving authentic Nigerian cuisine for over a decade! With nine bustling branches across the UK and two in Dubai, we're proud to bring the diverse and flavourful dishes of Nigeria to our customers. Our chefs expertly prepare traditional favourites like Jollof Rice, Egusi Soup & all of your favourite dishes. At Enish, we're passionate about sharing the rich culinary traditions of Nigeria with the world. Come and join us for a truly authentic and delicious dining experience today!
+
+
+
+    Dubai chain and yacht experience
+
+
+# Haidilao
+https://www.haidilao-inc.com/sg
+Hotpot over 900 locations -> 935
+Founded 1994
+By the end of June 30, 2020 ,Haidilao has opened 935 chain restaurants in China, Singapore, U.S., South Korea, Japan, Canada ,the United Kingdom, Malaysia , Vietnam,Indonesia and Australia.
+Several Awards
+Memebership System
+
+# Akoko
+    Feature
+    https://akoko.co.uk/
+
+    Founder - Aji Akokomi
+    West African michilen star -> expensive
+
+    Akoko is a west african michilen star restuarant. Akoko blends the freshest seasonal British ingredients with African spices. 
+
+    Full tasting menus are offered for both lunch and dinner with a shorter menu offered for lunch hours. Drink pairings are offered alongside your meal. Pairing cocktails and wines from across Africa. 
+
+
+# Mowgli
+https://www.mowglistreetfood.com/our-story/
+Nisha Katana
+21 locations 3 more coming soon
+Indian
+
+    Mowgli trust-> donates to charities
+
+# Dishoom
+https://www.dishoom.com/#welcome
+Irani
+10 locations
+Several awards
+
+    Meal kits
+
+# Gaucho
+https://gauchorestaurants.com/
+might be hefty price -> only in signature menu
+20 locations
+Argentinian
+
+# Akub
+    Feature
+https://www.akub-restaurant.com/
+Fadi Kattan - Founder
+Palestinian
+
+    offers private dining
+
+# Tattu
+https://tattu.co.uk/
+
+    chinese
+    5 UK locations
+    Founded 2015 Adam and Drew Jones
+    different menus for locations
+    Can choose different set meals that are sentr out in waves https://tattu.co.uk/wp-content/uploads/2024/02/ONLINE-ALC_EDI.pdf
+
+    Dubai opening 20224 ?? https://www.restaurantonline.co.uk/Article/2023/07/19/Tattu-rebrands-as-Permanently-Unique-with-new-Greek-Med-concept-in-the-offing#:~:text=Tattu%20was%20founded%20in%20Manchester,brothers%20Adam%20and%20Drew%20Jones.
+
+
+
+
+
+# PF Changs
+https://www.pfchangs.com/
+over 300 locations
+
+    P.F. Chang's Asian Table offers a contemporary and approachable culinary experience, blending traditional Asian flavors with a modern twist. Our dishes range from iconic favourites like Mongolian Beef and Chicken Lettuce Wraps to modern innovations and healthy options. 
+
+    While the first P.F. Chang’s opened in 1993, our story began in the early 1960s when our co-founder, Philip Chiang, stepped in to help run the family restaurant. He later channeled his budding culinary talents into creating modern adaptations of his family’s traditional Chinese dishes, opening his own restaurant, Mandarette. He never set out to build a global brand, but then he met the man who would become the P.F. in our name: Paul Fleming. Paul, a successful restaurateur and a regular guest at Mandarette, was so impressed with the simple, purposeful recipes being served up that he wanted to share them with the masses. With a handshake, P.F. Chang’s was born.
+
+    Offer's a takeaway as well
+
+    About 
+    https://www.pfchangs.com/global/about
+    1993 first location
+    Different Models that catergorize what the enterior of the locations would look like
+
+
+# Ivy
+https://theivyasia.com/
+
+The Ivy Asia is a child of the Ivy restuarant collections focus wholly on delivereing expetional food that
+
+A collection of unique Asian-inspired restaurants.
+The Ivy Asia takes you through a journey of the senses with a dining and drinking story inspired by Asian influence. The restaurants offer a luxurious and theatrical setting in both its design and décor. This sense of opulence and vibrancy is present from the second you walk in.
+
+
+# Hoppers
+
+https://www.hopperslondon.com/
+https://www.hopperslondon.com/about-hoppers-karan-gokani/
+Sri Lanka and South India.
+Founded 2015
+
+3 locations london based
+
+Mention of charity
+Private dining
+
+
+# 805 Restaurants
+https://www.805restaurants.com/
+african ££
+not expensove
+african branchs
+
+
+West african highlighting Nigerian cuisine.
+805 is a west African restuarant that first began their journey in 2001 one through the opening of their first restuarant. Through every meal they showcase the traditional cooking methods and indigenous ingredients used in their meals.   
+Twenty Years later their practices remain the same.
+
+Founded by Mr Frederick and Mrs Damaris James, 805 Restaurants remains family owned.
+
+4 locations in the UK -> 3 in London and the last in Reading. 1 Abuja, Nigeria and the last to making an appeearence in Ghana
+
+805 restuarants offer the option to book for private dining allowing the duality of having a casual dinner as well as an intimate dinner with family & friends.
+
+150 SEATED GUESTS -> Old Kent Road LONDON, UK
+24 SEATED GUESTS -> Hyde Park LONDON, UK
+40 SEATED GUESTS -> Hendon Central LONDON, UK
+40 SEATED GUESTS -> Reading UK
+120 SEATED GUESTS -> Accra (Adomi Street) GHANA
+210* SEATED GUESTS -> Abuja NIGERIA
+200 SEATED GUESTS -> Accra (Mission Road) GHANA
+
+805 restuarants also offers event catering for parties, coporate and special occasions. They allow the opportunity to customise a menu that will meet your particular requirements.
+
+award winning west african restaurant
+
+# kudo
+https://www.kuducollective.com/
+south african
+london brAnches read more
+
+
+The Kudo Colelctive is a family run buisness managing a group of restaurants founded by Amy & Patrick in 2017. Their south african roots is what inspires their food and menu.
+
+They offer the option of private dining
+
+They have 4 locations across London
+
+# JKS Restuarants
+https://jksrestaurants.com/
+1.
+https://www.trishnalondon.com/
+Indian michilan star not expensive
+Nice interior
+
+2.
+https://gymkhanalondon.com/
+Indian
+2 locations
+2 michilan stars
+Not to crazy prices 25-30 for main
+4 course £49 lunch
+
+3.
+
+
+# About Page
+
+Food is fun food is life so enjoy flavoursome nibbles.
+
+Flavoursome Nibbles is your guide to a more flavoursome experience. With every restuarnat highlightened showcasing traditional food with a story behind their ethnic roots.
+
+Flavoursome nibbles has grown from my passion for flavourful foods. Experiencing diverse cultures is something I strive to do. What better way to do that than through food? Much cheaper than catching a flight but still experiencing the traditions that different cultures have.
+
+    Food tells a story and holds history. Some meals bring comforts and are past through generations. Others use the influence from different vistors to evolve the way they're prepared, presented and enjoyed. Either way food holds culture. <br>
+
+    Admist the all to familar steakhouse and Italian spots. There are hidden gems waiting to be discoverd. Why not shine some light on them? <br>
+
+    Through different cultures and hear the stories that are shared while bonding over the meals. Aftr all that is what food is all about.  <br>
+
+    Travel and experience stories worthy of being told one forkful at a time. <br>
+
+Navigating is made simple through our map room(hyperlink). Hover over each country coloured and restaurant(s) orginating from that country will be revealed to you. Selct the restuarant you wish to learn more about and delve into more flavourome foods.

@@ -1,0 +1,74 @@
+/* About */
+
+#about {
+    background-color: #b4b0b0;
+    border: 1px solid #ccc;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    background-color: #C7BEA2;
+    
+}
+
+#aboutsecs{
+    background-color: #b4b0b0;
+    padding-bottom: 15px;
+}
+
+.webabout,
+.why,
+.howtonavigate {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    margin-left: 275px; 
+    margin-right: 200px;
+    
+    border: 5px dashed #BDD2B6;
+    width: 70%;
+    float: none;
+    display: inline-block;
+
+    background-color: #474e5d;
+    color: black;
+    text-align: center;
+}
+
+
+
+/* NAV BAR */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E5DCC3;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #C7BEA2;
+}
+
+h1 {
+    color: navy;
+}
+
+#map { height: 900px; }
