@@ -21,15 +21,83 @@
             <h3 style="text-align:center"> Food is Fun, Food is Life so Enjoy Flavoursome Nibbles!</h3>
         </div>
 
-        <section class="Feature">
-            <img src="images/akoko.png" style="width: 80%;">
+<!--        <section class="Feature">-->
+<!--            <img src="images/akoko.png" style="width: 80%;">-->
+<!--            <p>Akoko a Michlin star restuarant</p>-->
+<!--        </section>-->
+
+<!--        <section class="Feature">-->
+<!--            <img src="images/akub.png" style="width: 80%;">-->
+<!--            <p>akub a restuarant</p>-->
+<!--        </section>-->
+
+        <div class="slideshow">
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/akokoinside.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/akub.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/akoko.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/mapcolortemp.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+
+        <section class="feature">
+            <div style="border: 2px dashed white;">
+                <img src="images/akub.png" style="width: 100%;">
+            </div>
+
             <p>Akoko a Michlin star restuarant</p>
         </section>
 
-        <section class="Feature">
-            <img src="images/akub.png" style="width: 80%;">
+        <section class="feature">
+            <div>
+                <img src="images/akoko.png" style="width: 100%;">
+            </div>
+
             <p>akub a restuarant</p>
         </section>
-        
+
+        </section>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex-1].style.display = "block";
+            }
+        </script>
     </body>
 </html>
