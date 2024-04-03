@@ -35,7 +35,6 @@
             // L.geoJson(maproom).addTo(map);
 
             var script = document.createElement('script');
-            // script.src = "Data/maproom.js";
             script.onload = function() {
                 // Access the mapRoom variable from maproom.js
                 L.geoJson(mapRoom, {
@@ -48,11 +47,11 @@
 
             // Define the style for locations
             function getColor(restuarants) {
-                return restuarants > 100 ? '#800026' :
-                    restuarants > 50  ? '#BD0026' :
-                        restuarants > 20  ? '#E31A1C' :
-                            restuarants > 10  ? '#FC4E2A' :
-                                restuarants > 5   ? '#FD8D3C' :
+                return restuarants > 20 ? '#800026' :
+                    restuarants > 10  ? '#BD0026' :
+                        restuarants > 5  ? '#E31A1C' :
+                            restuarants > 4  ? '#FC4E2A' :
+                                restuarants > 3   ? '#FD8D3C' :
                                     restuarants > 2   ? '#FEB24C' :
                                         restuarants > 1   ? '#FED976' :
                                             '#FFEDA0';
@@ -120,9 +119,14 @@
             };
 
             info.update = function (props) {
-                this._div.innerHTML = '<h4>Restuarants</h4>' + (props ?
-                    '<b>' + props.name + '</b><br />' + props.restuarants + ' resturants'
-                    : 'Hover over a country');
+                if (props && props.name && props.companies) {
+                    var companiesList = props.companies.map(function(companies) {
+                        return '<b>' + companies.name + '</b><br>';
+                    }).join('');
+                    this._div.innerHTML = '<h4>Restaurants</h4>' + '<b>' + props.name + '</b><br>' + companiesList;
+                } else {
+                    this._div.innerHTML = '<h4>Restaurants</h4>Hover over a country';
+                }
             };
 
             info.addTo(map);
@@ -132,7 +136,7 @@
             legend.onAdd = function (map) {
 
                 var div = L.DomUtil.create('div', 'info legend'),
-                    grades = [0, 1, 2, 5, 10, 20, 50, 100],
+                    grades = [0, 1, 2, 3, 4, 5, 10, 20],
                     labels = [];
 
                 // loop through our density intervals and generate a label with a colored square for each interval
