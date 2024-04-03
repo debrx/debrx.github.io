@@ -131,7 +131,13 @@
 
 
 
+
 /* NAV BAR */
+
+.standardnav{
+    position: fixed;
+    width: 100%;
+}
 
 ul {
     list-style-type: none;
@@ -140,11 +146,15 @@ ul {
     overflow: hidden;
     background-color: #E5DCC3;
 }
-  
+
 li {
     float: left;
 }
-  
+
+.buttonnav li:last-child {
+    float: right; /* Move the last li element (containing the button) to the right */
+}
+
 li a {
     display: block;
     color: white;
@@ -152,19 +162,32 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-  
-  /* Change the link color to #111 (black) on hover */
+
+
 li a:hover {
     background-color: #C7BEA2;
 }
 
-h1 {
-    color: navy;
+.viewlist {
+    display: block;
+    background-color: transparent; /* try blend in */
+    border: none;
+    color: white;
+    padding: 15px 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Georgia, sans-serif; /* blend font into rest of nav */
+    font-size: 16px;
 }
 
-#map { height: 900px; }
+.viewlist:hover {
+    background-color: #C7BEA2;
+}
+
 
 /*Map room*/
+#map { height: 900px; }
+
 .info {
     padding: 6px 8px;
     font: 14px/16px Arial, Helvetica, sans-serif;
@@ -188,4 +211,98 @@ h1 {
     float: left;
     margin-right: 8px;
     opacity: 0.7;
+}
+
+/* restuarant list */
+/* overlay */
+.overlay{
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    width: 100%;
+    position: relative;
+    top: 25%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 5px;
+    font-size: 36px;
+    color: #c6c0c0;
+    display: block;
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #fffcfc;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/* Restuarant page */
+
+.restuarant, .owner {
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px dashed #BDD2B6;
+    margin: 30px;
+}
+
+.restuarant .row {
+    display: flex;
+    width: 100%;
+}
+
+.restuarant .columns {
+    flex: 1;
+    margin: 15px; /* Adjust margins as needed */
+    border: 5px dashed #BDD2B6;
+}
+
+
+.owner .biography,
+.owner .headshot {
+    flex: 1;
+    margin: 15px; /* Adjust margins as needed */
+    border: 5px dashed #BDD2B6;
+}
+
+/* General */
+
+
+.body, body{
+    background-color: #b4b0b0;
+
+}
+
+h1 {
+    color: navy;
+}
+
+html{
+    scroll-behavior: smooth;
 }
