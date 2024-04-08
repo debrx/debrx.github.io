@@ -3,82 +3,96 @@
     <head>
         <title> Home Page</title>
         <link rel="stylesheet" href="cwk.css">
+        <style>
+            /* Hide scrollbar for Chrome, Safari and Opera */
+            ::-webkit-scrollbar {
+                display: none;
+            }
+
+            /* Hide scrollbar for IE, Edge and Firefox */
+            body {
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+            }
+        </style>
     </head>
 
     <body>
         <header>
-            <ul>
+            <ul class="standardnav">
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="map.html">Map Room</a></li>
-                <li><a href="#contact">Gallary</a></li>
-                
-              </ul>
+                <li><a href="maptest.html">Map Room</a></li>
+                <li><a href="gallery.html">Gallary</a></li>
+
+            </ul>
         </header>
 
-        <div class="header">
-            <h1 style="text-align:center; font-family:Arkhip">Flavoursome Nibbles</h1>
-            <h3 style="text-align:center"> Food is Fun, Food is Life so Enjoy Flavoursome Nibbles!</h3>
-        </div>
-
-<!--        <section class="Feature">-->
-<!--            <img src="images/akoko.png" style="width: 80%;">-->
-<!--            <p>Akoko a Michlin star restuarant</p>-->
-<!--        </section>-->
-
-<!--        <section class="Feature">-->
-<!--            <img src="images/akub.png" style="width: 80%;">-->
-<!--            <p>akub a restuarant</p>-->
-<!--        </section>-->
-
-        <div class="slideshow">
-            <div class="mySlides">
-                <div class="numbertext">1 / 4</div>
-                <img src="images/akokoinside.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">2 / 4</div>
-                <img src="images/akub.png" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">3 / 4</div>
-                <img src="images/akoko.png" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">4 / 4</div>
-                <img src="images/mapcolortemp.png" style="width:100%">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <main>
 
 
-            <div class="caption-container">
-                <p id="caption"></p>
-            </div>
-        </div>
+            <section class="slideshow" id="slideshow">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/General/logo.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <a href="about.html">
+                        <img src="images/General/about.png" style="width:100%">
+                    </a>
+
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <a href="map.html">
+                        <img src="images/General/map.png" style="width:100%">
+                    </a>
+
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <a href="gallery.html">
+                        <img src="images/General/gallery.png" style="width:100%">
+                    </a>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 
-        <section class="feature">
-            <div style="border: 2px dashed white;">
-                <img src="images/akub.png" style="width: 100%;">
-            </div>
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            </section>
 
-            <p>Akoko a Michlin star restuarant</p>
-        </section>
+            <section class="feature">
+                <img src="images/General/ourfeatures.png" style="width: 100%;">
+            </section>
 
-        <section class="feature">
-            <div>
-                <img src="images/akoko.png" style="width: 100%;">
-            </div>
+            <section class="feature" id="feature1">
+                <a href="akoko.html">
+                    <img src="images/featureforhome/2.png" style="width: 100%;">
+                </a>
+            </section>
 
-            <p>akub a restuarant</p>
-        </section>
+            <section class="feature" id="feature2">
+                <a href="akub.html">
+                    <img src="images/featureforhome/1.png" style="width: 100%;">
+                </a>
+            </section>
 
-        </section>
+
+            <button onclick="backToTop('slideshow')" id="toTop" title="Back to top"> 🔝</button>
+            <img id="scrolldown" src="images/General/scrolldown.png">
+
+        </main>
+
+
+
 
         <script>
             let slideIndex = 1;
@@ -98,6 +112,21 @@
                 }
                 slides[slideIndex-1].style.display = "block";
             }
+
+
+            function backToTop(sectionId) {
+                var section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({behavior: "smooth"});
+                }
+
+
+            }
+
+
+
+
+
         </script>
     </body>
 </html>

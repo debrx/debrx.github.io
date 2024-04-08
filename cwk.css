@@ -9,13 +9,13 @@
 /* Slideshow */
 .slideshow{
     position: relative;
-    width: 70%;
+    /* width: 70%;
     padding-bottom: 20px;
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 15px;
     margin-left: 250px;
-    margin-right: 200px;
+    margin-right: 200px; */
 }
 
 .mySlides{
@@ -47,7 +47,6 @@
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
-    margin-right: 15px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -65,29 +64,46 @@
     top: 0;
 }
 
-
-
-
 .feature{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 15px;
-    margin-left: 420px;
-    margin-right: 200px;
-
-    border: 5px dashed #BDD2B6;
-    width: 50%;
-    float: none;
-    display: inline-block;
-
-    background-color: #474e5d;
-    /* remove background colour when pallete is set */
-    color: black;
-    text-align: center;
+    position: relative;
 }
 
+
+main {
+    height: 100vh;
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scroll-snap-type: y mandatory; /* Enable vertical snap scrolling */
+}
+
+.slideshow, .feature{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+}
+
+#toTop {
+    position: fixed;
+    bottom: 70px;
+    left: 20px;
+    z-index: 9999;
+    border: none;
+    background-color: rgba(199, 190, 162, 0);
+    height: 30px;
+    width: 50px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#scrolldown{
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 9999;
+    height: 90px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: rgba(199, 190, 162, 0.2);
+}
 
 /* About */
 
@@ -100,7 +116,7 @@
     padding: 20px;
     text-align: center;
     background-color: #C7BEA2;
-    
+
 }
 
 #aboutsecs{
@@ -116,9 +132,9 @@
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 15px;
-    margin-left: 275px; 
+    margin-left: 275px;
     margin-right: 200px;
-    
+
     border: 5px dashed #BDD2B6;
     width: 70%;
     float: none;
@@ -131,12 +147,12 @@
 
 
 
-
 /* NAV BAR */
 
 .standardnav{
     position: fixed;
     width: 100%;
+    z-index: 9999;
 }
 
 ul {
@@ -185,7 +201,8 @@ li a:hover {
 }
 
 
-/*Map room*/
+
+/* MapRoom */
 #map { height: 900px; }
 
 .info {
@@ -291,12 +308,144 @@ li a:hover {
     border: 5px dashed #BDD2B6;
 }
 
+
+/* Gallery */
+
+
+/* .collection {
+    border: 10px dashed #BDD2B6;
+    display: flex;
+}
+
+.logo,
+.album {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.album{
+    margin-left: 2px;
+    padding-top: 10px ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+}
+
+.logo{
+    margin-right: 2px;
+
+}
+
+.gallerycolumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+ */
+.logo,
+.album {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.welcome{
+    scroll-snap-align: start; /*Align the snapping */
+    height: 100vh;
+}
+
+.collection {
+    /* border: 10px dashed #BDD2B6; */
+    display: flex;
+    scroll-snap-type: y mandatory;/* Enable vertical snap scrolling */
+    scroll-snap-align: start; /*Align the snapping*/
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    float: left;
+    width: 48%; /* Fill the height of the parent */
+
+}
+
+.album {
+    display: flex;
+    float: right;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.gallerycolumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    margin: 3px;
+}
+
+/* .logo,
+.album,
+.collection {
+    border: 5px dashed #BDD2B6;
+} */
+
+.items {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+
+aside{
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: 0;
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    background-color: rgba(199, 190, 162, 0);
+}
+
+aside ul li .indicator{
+    cursor: pointer;
+    margin-top: 1rem;
+    display: block;
+    height: 0.5px;
+    width: 0.5px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+aside ul li .active {
+    transform: scale(1.3);
+    transition: transform 200ms ease-in-out;
+}
+
 /* General */
 
 
 .body, body{
     background-color: #b4b0b0;
 
+}
+
+.body{
+    scroll-snap-type: y mandatory; /* Enable vertical snap scrolling */
+    height: 100vh; /* Set the height of the body to the full viewport height */
 }
 
 h1 {
