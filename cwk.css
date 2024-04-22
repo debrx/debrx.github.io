@@ -14,6 +14,9 @@
 .mySlides{
     display: none;
 }
+.mySlides:first-child{
+    display: block;
+}
 
 .cursor {
     cursor: pointer;
