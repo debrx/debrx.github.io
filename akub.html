@@ -12,14 +12,32 @@
         <li><a href="map.html">Map Room</a></li>
         <li><a href="gallery.html">Gallary</a></li>
       </ul>
-
-      <div class="header">
-        <h1 style="text-align:center; font-family:Arkhip">Akub</h1>
-        <h3 style="text-align:center"> Palestine</h3>
-      </div>
     </header>
 
-    <section class="restuarant">
+    <section class="opening" style="background-image: url('images/akub/akubtab.jpeg');">
+
+      <div class="titles">
+        <h1 class="restitle" style="text-align:center; font-family:Arkhip">akub</h1>
+        <h3 style="color: #E5DCC3;"> A Palestinian restaurant</h3>
+      </div>
+
+
+      <div class="resbuttons">
+        <button id="learn" onclick="ressec()">The restuarant</button>
+        <button id="ownerbtn" onclick="ownersec()">Who's the owner</button>
+        <button id="menucl" onclick="menusec()">Menu</button>
+
+        <a href="gallery.html#akub">
+          <button>Visit Our Gallery</button>
+        </a>
+
+
+      </div>
+
+
+    </section>
+
+    <section class="restaurant">
       <div class="row">
 
         <div class="columns">
@@ -34,26 +52,32 @@
             With great influence from Chef Fadi's grandmother, the food brought to the table at Akub not only captures the essence of his grandmother with the bold flavour combinations but also uses local ingredients available in Palestine. This combination leads to the uniqueness of the menu offered at akub. With the addition of Britain's seasonal produce and age-old Palestinian recipes, each dish is imaginative.
             <br><br>
             With private dining in mind, akub has 3 varied spaces for private events and parties. Whether is a business lunch, intimate dinner, or a drinks' reception. The staff at akub are delighted to accommodate to your needs.
+            <br><br>
+            🡰🡰 To catch at glimpse at the food and interior they have to offer click the image on the left
           </p>
-
-          <h4>Menu</h4>
-          <p>akub has 2 menus to choose from. À la carte menu as well as a brunch menu Explore these below</p>
-          <a href="https://www.akub-restaurant.com/s/A-la-Carte-February-24-ND.pdf">
-            <button>A la Carte</button>
-          </a>
-
-          <a href="https://static1.squarespace.com/static/65a474d3ba92613516fe5d06/t/65d8ced3a17c8e6e8a7f0122/1708707539653/Brunch+-+February+24+-+ND.pdf">
-            <button>Brunch</button>
-          </a>
         </div>
 
 
         <div class="columns">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310.4080852763573!2d-0.19884383066564223!3d51.508359926560416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760fab72ec3601%3A0xcd9ba87b1f188009!2sAkub%20Restaurant!5e0!3m2!1sen!2suk!4v1711658914586!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310.4080852763573!2d-0.19884383066564223!3d51.508359926560416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760fab72ec3601%3A0xcd9ba87b1f188009!2sAkub%20Restaurant!5e0!3m2!1sen!2suk!4v1711658914586!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
 
+    <section class ="menu">
+      <h1 class="restitle">Explore some menus</h1>
+      <p class="menucaption">akub has 2 menus to choose from. An a la carte menu as well as a brunch menu Explore these below</p>
+      <div class="menubtn">
+        <a href="https://www.akub-restaurant.com/s/A-la-Carte-February-24-ND.pdf">
+          <button>A la Carte</button>
+        </a>
+
+        <a href="https://static1.squarespace.com/static/65a474d3ba92613516fe5d06/t/65d8ced3a17c8e6e8a7f0122/1708707539653/Brunch+-+February+24+-+ND.pdf">
+          <button>Brunch</button>
+        </a>
+      </div>
+
+    </section>
 
     <section class="owner">
       <div class="biography">
@@ -68,13 +92,79 @@
       </div>
 
       <div class="headshot">
-        <img scr="images/akub/akubchef.png" style="width: 80%;">
+        <img scr="images/akub/akubchef.png" style="width: 80%; float:right;">
       </div>
 
-
-
-
     </section>
+
+    <script>
+      document.getElementById('learn').addEventListener('click', function() {
+        document.querySelector('.restaurant').scrollIntoView({
+          behavior: 'smooth'
+        });
+        hidesection('.owner');
+        hidesection('.menu');
+      });
+
+      document.getElementById('ownerbtn').addEventListener('click', function() {
+        document.querySelector('.owner').scrollIntoView({
+          behavior: 'smooth'
+        });
+        hidesection('.restaurant');
+        hidesection('.menu');
+      });
+
+      document.getElementById('menucl').addEventListener('click', function() {
+        document.querySelector('.menu').scrollIntoView({
+          behavior: 'smooth'
+        });
+        hidesection('.restaurant');
+        hidesection('.owner');
+      });
+
+      function ownersec() {
+        var owners = document.getElementsByClassName("owner");
+        for (var i = 0; i < owners.length; i++) {
+          var owner = owners[i];
+          if (owner.style.display === "none" || owner.style.display === "") {
+            owner.style.display = "flex";
+          } else {
+            owner.style.display = "none";
+          }
+        }
+      }
+
+      function ressec() {
+        var owners = document.getElementsByClassName("restaurant");
+        for (var i = 0; i < owners.length; i++) {
+          var owner = owners[i];
+          if (owner.style.display === "none" || owner.style.display === "") {
+            owner.style.display = "flex";
+          } else {
+            owner.style.display = "none";
+          }
+        }
+      }
+
+      function menusec() {
+        var owners = document.getElementsByClassName("menu");
+        for (var i = 0; i < owners.length; i++) {
+          var owner = owners[i];
+          if (owner.style.display === "none" || owner.style.display === "") {
+            owner.style.display = "flex";
+          } else {
+            owner.style.display = "none";
+          }
+        }
+      }
+
+      function hidesection(sectionClass) {
+        var sections = document.querySelectorAll(sectionClass);
+        for (var i = 0; i < sections.length; i++) {
+          sections[i].style.display = "none";
+        }
+      }
+    </script>
 
   </body>
 </html>

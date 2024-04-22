@@ -296,30 +296,81 @@ li a:hover {
 
 /* Restuarant page */
 
-.restuarant, .owner {
+.restaurant, .owner {
     display: flex;
     flex-wrap: wrap;
-    border: 5px dashed #BDD2B6;
-    margin: 30px;
+    /* border: 5px dashed #BDD2B6; */
+    margin-top: 1%;
+    /* margin: 30px; */
+    background-color: #889E81;
+    display: none;
 }
 
-.restuarant .row {
+.opening{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    background-color: #889E81;
+    align-items: center;
+    justify-content: center; /* Center vertically */
+    margin-top: 0;
+}
+
+
+.restitle{
+    font-size: 70px;
+    color: #E5E4CC;
+}
+
+.titles{
+    padding-bottom: 15%;
+    align-items: center;
+    justify-content: center; /* Center vertically */
+}
+
+.menu{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+    display: none;
+    background-color: #889E81;
+}
+
+.menucaption{
+    color: white;
+    font-size: 20px;
+}
+
+.menubtn{
+    display:flex;
+    margin: 2%;
+    padding: 2%;
+    align-items: center;
+}
+
+.columns button {
+    margin: 2%;
+}
+
+.restaurant .row {
     display: flex;
     width: 100%;
 }
 
-.restuarant .columns {
+.restaurant .columns {
     flex: 1;
-    margin: 15px; /* Adjust margins as needed */
-    border: 5px dashed #BDD2B6;
+    margin: 15px;
 }
 
 
 .owner .biography,
 .owner .headshot {
     flex: 1;
-    margin: 15px; /* Adjust margins as needed */
-    border: 5px dashed #BDD2B6;
+    margin: 2%;
+
 }
 
 
