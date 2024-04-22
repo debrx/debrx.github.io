@@ -4,30 +4,56 @@ function hidesection(sectionClass) {
         section.style.display = "none";
     });
 }
-
-document.getElementById('learn').addEventListener('click', function() {
-    document.querySelector('.restaurant').scrollIntoView({
-        behavior: 'smooth'
+document.addEventListener('DOMContentLoaded', function() {
+    // Assign event listeners to buttons
+    document.getElementById('learn').addEventListener('click', function() {
+        document.querySelector('.restaurant').scrollIntoView({
+            behavior: 'smooth'
+        });
+        hidesection('.owner');
+        hidesection('.menu');
     });
-    hidesection('.owner');
-    hidesection('.menu');
-});
 
-document.getElementById('ownerbtn').addEventListener('click', function() {
-    document.querySelector('.owner').scrollIntoView({
-        behavior: 'smooth'
+    document.getElementById('ownerbtn').addEventListener('click', function() {
+        document.querySelector('.owner').scrollIntoView({
+            behavior: 'smooth'
+        });
+        hidesection('.restaurant');
+        hidesection('.menu');
     });
-    hidesection('.restaurant');
-    hidesection('.menu');
-});
 
-document.getElementById('menucl').addEventListener('click', function() {
-    document.querySelector('.menu').scrollIntoView({
-        behavior: 'smooth'
+    document.getElementById('menucl').addEventListener('click', function() {
+        document.querySelector('.menu').scrollIntoView({
+            behavior: 'smooth'
+        });
+        hidesection('.restaurant');
+        hidesection('.owner');
     });
-    hidesection('.restaurant');
-    hidesection('.owner');
 });
+//
+// document.getElementById('learn').addEventListener('click', function() {
+//     document.querySelector('.restaurant').scrollIntoView({
+//         behavior: 'smooth'
+//     });
+//     hidesection('.owner');
+//     hidesection('.menu');
+// });
+//
+// document.getElementById('ownerbtn').addEventListener('click', function() {
+//     document.querySelector('.owner').scrollIntoView({
+//         behavior: 'smooth'
+//     });
+//     hidesection('.restaurant');
+//     hidesection('.menu');
+// });
+//
+// document.getElementById('menucl').addEventListener('click', function() {
+//     document.querySelector('.menu').scrollIntoView({
+//         behavior: 'smooth'
+//     });
+//     hidesection('.restaurant');
+//     hidesection('.owner');
+// });
 
 function ownersec() {
     var owners = document.getElementsByClassName("owner");
