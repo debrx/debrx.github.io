@@ -3,6 +3,7 @@
   <head>
     <title> Gallery</title>
     <link rel="stylesheet" href="cwk.css">
+    <script src="script.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <style>
       /* Hide scrollbar for Chrome, Safari and Opera */
@@ -124,46 +125,6 @@
         </ul>
       </aside>
     </main>
-
-    <script>
-      const indicators = document.querySelectorAll('a.indicator');
-      const resetCurrentActiveIndicator = () => {
-        const activeIndicator = document.querySelector(".active");
-        activeIndicator.classList.remove("active");
-      };
-      indicators.forEach((indicator) => {
-        indicator.addEventListener('click', function () {
-          resetCurrentActiveIndicator();
-          this.classList.add('active');
-        });
-      });
-
-      const sections = document.querySelectorAll("section");
-
-      const onSectionLeavesViewport = (section) => {
-        const observer = new IntersectionObserver(
-                (entries) => {
-                  entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                      resetCurrentActiveIndicator();
-                      const element = entry.target;
-                      const indicator = document.querySelector(`a[href='#${element.id}']`);
-                      indicator.classList.add("active");
-                      return;
-                    }
-                  });
-                },
-                {
-                  root: null,
-                  rootMargin: "0px",
-                  threshold: 0.75
-                }
-        );
-        observer.observe(section);
-      };
-
-      sections.forEach(onSectionLeavesViewport);
-    </script>
 
   </body>
 </html>

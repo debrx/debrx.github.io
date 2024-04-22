@@ -3,6 +3,7 @@
     <head>
         <title> Home Page</title>
         <link rel="stylesheet" href="cwk.css">
+        <script src="script.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             /* Hide scrollbar for Chrome, Safari and Opera */
@@ -92,42 +93,5 @@
 
         </main>
 
-
-
-
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                if (n > slides.length) {slideIndex = 1}
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slides[slideIndex-1].style.display = "block";
-            }
-
-
-            function backToTop(sectionId) {
-                var section = document.getElementById(sectionId);
-                if (section) {
-                    section.scrollIntoView({behavior: "smooth"});
-                }
-
-
-            }
-
-
-
-
-
-        </script>
     </body>
 </html>
