@@ -305,7 +305,9 @@ li a:hover {
     background-color: #889E81;
     display: none;
 }
-
+.hidden {
+    display: none;
+}
 .opening{
     display: flex;
     flex-direction: column;

@@ -1,35 +1,35 @@
-
+// Function to toggle visibility of elements with the given class
 function toggleSection(sectionClass) {
-    var sections = document.getElementsByClassName(sectionClass);
-    for (var i = 0; i < sections.length; i++) {
-        var section = sections[i];
+    var sections = document.querySelectorAll(sectionClass);
+    sections.forEach(function(section) {
         section.classList.toggle('hidden');
-    }
+    });
 }
 
+// Event listener for 'learn' button
 document.getElementById('learn').addEventListener('click', function() {
     document.querySelector('.restaurant').scrollIntoView({
         behavior: 'smooth'
     });
-    toggleSection('.owner');
-    toggleSection('.menu');
+    toggleSection('.owner, .menu');
 });
 
+// Event listener for 'ownerbtn' button
 document.getElementById('ownerbtn').addEventListener('click', function() {
     document.querySelector('.owner').scrollIntoView({
         behavior: 'smooth'
     });
-    toggleSection('.restaurant');
-    toggleSection('.menu');
+    toggleSection('.restaurant, .menu');
 });
 
+// Event listener for 'menucl' button
 document.getElementById('menucl').addEventListener('click', function() {
     document.querySelector('.menu').scrollIntoView({
         behavior: 'smooth'
     });
-    toggleSection('.restaurant');
-    toggleSection('.owner');
+    toggleSection('.restaurant, .owner');
 });
+
 
 // function ownersec() {
 //     var owners = document.getElementsByClassName("owner");
