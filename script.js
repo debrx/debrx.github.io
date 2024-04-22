@@ -68,6 +68,7 @@ function menusec() {
 }
 
 // Slideshow javascript.
+showSlides(slideIndex);
 
 let slideIndex = 1;
 showSlides(slideIndex);
