@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
         hidesection('.owner');
     });
 
+    showSlides(slideIndex);
+
     document.getElementById('backToTopButton').addEventListener('click', function() {
         backToTop('top'); // Scroll back to the element with ID "top"
     });
@@ -68,10 +70,9 @@ function menusec() {
 }
 
 // Slideshow javascript.
-showSlides(slideIndex);
+
 
 let slideIndex = 1;
-showSlides(slideIndex);
 
 function plusSlides(n) {
     showSlides(slideIndex += n);
@@ -87,7 +88,7 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "block";
 }
-function backToTop(sectionId) {
+function backToTop(sectionId){
     var section = document.getElementById(sectionId);
     if (section) {
         section.scrollIntoView({behavior: "smooth"});
