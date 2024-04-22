@@ -13,19 +13,33 @@
         <li><a href="gallery.html">Gallary</a></li>
       </ul>
 
-      <div class="header">
-        <h1 style="text-align:center; font-family:Arkhip">Enish</h1>
-        <h3 style="text-align:center"> A Nigerian Chain</h3>
-      </div>
     </header>
 
-    <section class="restuarant">
+    <section class="opening" style="background-image: url('images/enish/enishcover.jpg');">
+
+      <div class="titles">
+        <h1 class="restitle" style="text-align:center; font-family:Arkhip">Enish</h1>
+        <h3 style="color: #E5DCC3;"> A Nigerian Chain!</h3>
+      </div>
+
+      <div class="resbuttons">
+        <button id="learn" onclick="ressec()">The restaurant</button>
+        <button id="ownerbtn" onclick="ownersec()">Who's the owner</button>
+        <a href="gallery.html#enish">
+          <button>Visit Our Gallery</button>
+        </a>
+      </div>
+
+    </section>
+
+
+    <section class="restaurant">
       <div class="row">
 
         <div class="columns">
-          <p>
-            hello
-          </p>
+          <a href="gallery.html#enish">
+            <img class="items" src="images/enish/nkwobi.jpg" style="width:100%">
+          </a>
         </div>
 
         <div class="columns">
@@ -41,20 +55,16 @@
 
           </p>
 
-          <h4>Menu</h4>
           <p>
-
             <br><br>
             With the restaurant name coming from the combination of two co-founders it's time we learn more about them.
           </p>
         </div>
 
-
         <div class="columns">
-          <p>
-
-          </p>
+          <iframe src="https://enishoxfordstreet.tablemenu.co/online_order"  width="100%" height="100%"></iframe>
         </div>
+
       </div>
     </section>
 
@@ -72,20 +82,62 @@
 
         </p>
 
-        <p>
-
-        </p>
-
       </div>
 
       <div class="headshot">
-        <img src="images/enish/shola.png">
+        <img src="images/enish/shola.png" style="float:right;">
       </div>
 
-
-
-
     </section>
+
+    <script>
+      document.getElementById('learn').addEventListener('click', function() {
+        document.querySelector('.restaurant').scrollIntoView({
+          behavior: 'smooth'
+        });
+        hidesection('.owner');
+        hidesection('.menu');
+      });
+
+      document.getElementById('ownerbtn').addEventListener('click', function() {
+        document.querySelector('.owner').scrollIntoView({
+          behavior: 'smooth'
+        });
+        hidesection('.restaurant');
+        hidesection('.menu');
+      });
+
+      function ownersec() {
+        var owners = document.getElementsByClassName("owner");
+        for (var i = 0; i < owners.length; i++) {
+          var owner = owners[i];
+          if (owner.style.display === "none" || owner.style.display === "") {
+            owner.style.display = "flex";
+          } else {
+            owner.style.display = "none";
+          }
+        }
+      }
+
+      function ressec() {
+        var owners = document.getElementsByClassName("restaurant");
+        for (var i = 0; i < owners.length; i++) {
+          var owner = owners[i];
+          if (owner.style.display === "none" || owner.style.display === "") {
+            owner.style.display = "flex";
+          } else {
+            owner.style.display = "none";
+          }
+        }
+      }
+
+      function hidesection(sectionClass) {
+        var sections = document.querySelectorAll(sectionClass);
+        for (var i = 0; i < sections.length; i++) {
+          sections[i].style.display = "none";
+        }
+      }
+    </script>
 
   </body>
 </html>
