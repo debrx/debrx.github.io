@@ -34,6 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
         backToTop('top'); // Scroll back to the element with ID "top"
     });
 
+    let slideIndex = 1;
+
 });
 
 function ownersec() {
