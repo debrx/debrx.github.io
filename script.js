@@ -30,8 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
         hidesection('.owner');
     });
 
-    showSlides(slideIndex);
-
     document.getElementById('backToTopButton').addEventListener('click', function() {
         backToTop('top'); // Scroll back to the element with ID "top"
     });
@@ -70,6 +68,7 @@ function menusec() {
 }
 
 // Slideshow javascript.
+showSlides(slideIndex);
 
 let slideIndex = 1;
 showSlides(slideIndex);
