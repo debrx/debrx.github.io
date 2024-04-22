@@ -29,6 +29,13 @@ document.addEventListener('DOMContentLoaded', function() {
         hidesection('.restaurant');
         hidesection('.owner');
     });
+
+    showSlides(slideIndex);
+
+    document.getElementById('backToTopButton').addEventListener('click', function() {
+        backToTop('top'); // Scroll back to the element with ID "top"
+    });
+
 });
 
 function ownersec() {
@@ -81,14 +88,11 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "block";
 }
-
-
 function backToTop(sectionId) {
     var section = document.getElementById(sectionId);
     if (section) {
         section.scrollIntoView({behavior: "smooth"});
     }
-
 }
 
 //Gallery
