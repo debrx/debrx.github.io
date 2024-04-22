@@ -15,9 +15,9 @@
     display: none;
 }
 
-.mySlides:first-child {
-    display: block; /* Display the first slide initially */
-}
+/*.mySlides:first-child {*/
+/*    display: block; !* Display the first slide initially *!*/
+/*}*/
 
 .cursor {
     cursor: pointer;
