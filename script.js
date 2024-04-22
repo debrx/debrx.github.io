@@ -33,8 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('backToTopButton').addEventListener('click', function() {
         backToTop('top'); // Scroll back to the element with ID "top"
     });
-    showSlides(slideIndex);
-    let slideIndex = 1;
 
 });
 
