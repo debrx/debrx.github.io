@@ -156,7 +156,6 @@ main {
 }
 
 
-
 /* NAV BAR */
 
 .standardnav{
@@ -240,7 +239,7 @@ li a:hover {
     opacity: 0.7;
 }
 
-/* restuarant list */
+/* restaurant list */
 /* overlay */
 .overlay{
     height: 100%;
@@ -290,7 +289,7 @@ li a:hover {
     }
 }
 
-/* Restuarant page */
+/* Restaurant page */
 
 .restaurant, .owner {
     display: flex;
@@ -417,11 +416,6 @@ li a:hover {
     margin: 3px;
 }
 
-/* .logo,
-.album,
-.collection {
-    border: 5px dashed #BDD2B6;
-} */
 
 .items {
     max-width: 100%;
@@ -431,7 +425,6 @@ li a:hover {
     margin-bottom: 5px;
 
 }
-
 
 aside{
     position: fixed;
