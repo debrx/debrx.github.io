@@ -73,6 +73,15 @@ function menusec() {
 // Slideshow javascript.
 let slideIndex = 1;
 
+function startSlideshow() {
+    slideInterval = setInterval(function () {
+        plusSlides(1);
+    },2000)
+}
+
+function stopSlideshow() {
+    clearInterval(slideInterval);
+}
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
@@ -93,6 +102,8 @@ function backToTop(sectionId){
         section.scrollIntoView({behavior: "smooth"});
     }
 }
+
+startSlideshow();
 
 //Gallery
 
