@@ -39,6 +39,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+function openList() {
+    document.getElementById("restuarantList").style.width = "100%";
+}
+
+/* Close */
+function closeList() {
+    document.getElementById("restuarantList").style.width = "0%";
+}
+
 function ownersec() {
     var owners = document.getElementsByClassName("owner");
     for (var i = 0; i < owners.length; i++) {
