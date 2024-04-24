@@ -39,6 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+// restaurant list
+/* Open */
 function openList() {
     document.getElementById("restuarantList").style.width = "100%";
 }
