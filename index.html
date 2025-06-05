@@ -1,97 +1,48 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title> Home Page</title>
-        <link rel="stylesheet" href="cwk.css">
-        <script src="script.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            /* Hide scrollbar for Chrome, Safari and Opera */
-            ::-webkit-scrollbar {
-                display: none;
-            }
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header>
+    <a href="index.html" class="logo">Deborah Ama.</a>
+    <ul class="navmenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</header>
 
-            /* Hide scrollbar for IE, Edge and Firefox */
-            body {
-                -ms-overflow-style: none;  /* IE and Edge */
-                scrollbar-width: none;  /* Firefox */
-            }
-        </style>
-    </head>
+<section class="home">
+    <div class="home-text">
+        <h2>Hello I'm Deborah <i class="ph-bold ph-hand-waving"></i></h2>
+        <h3>Aspiring Software Engineer</h3>
+        <p>I'm 3rd Year Computer Science Student,
+            and i'm very passionate and dedicated to my learning and growth.</p>
+        <div class="home-btn">
+            <a href="#" class="btn">Contact Info</a>
+            <a href="#" class="btn">Download CV <i class="ph ph-read-cv-logo"></i></a>
+        </div>
+    </div>
+    <div class="home-img">
+        <img src="img/headshot.png" />
+    </div>
+</section>
 
-    <body>
-        <header>
-            <ul class="standardnav">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="map.html">Map Room</a></li>
-                <li><a href="gallery.html">Gallary</a></li>
+<div class="socials-icons">
+    <a href="#https://www.linkedin.com/in/deborah-ama-547228281/"><i class="ph-bold ph-linkedin-logo"></i></a>
+    <a href="#"><i class="ph-bold ph-github-logo"></i></a>
+    <a href="#"><i class="ph-bold ph-tiktok-logo"></i></a>
+    <a href="#"><i class="ph-bold ph-youtube-logo"></i></a>
+</div>
 
-            </ul>
-        </header>
-
-        <main>
-
-
-            <section class="slideshow" id="slideshow">
-                <div class="mySlides">
-                    <div class="numbertext">1 / 4</div>
-                    <img src="images/General/logo.png" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">2 / 4</div>
-                    <a href="about.html">
-                        <img src="images/General/about.png" style="width:100%">
-                    </a>
-
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">3 / 4</div>
-                    <a href="map.html">
-                        <img src="images/General/map.png" style="width:100%">
-                    </a>
-
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">4 / 4</div>
-                    <a href="gallery.html">
-                        <img src="images/General/gallery.png" style="width:100%">
-                    </a>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-
-                <div class="caption-container">
-                    <p id="caption"></p>
-                </div>
-            </section>
-
-            <section class="feature" id="featuretitle">
-                <img src="images/General/ourfeatures.png" style="width: 100%;">
-            </section>
-
-            <section class="feature" id="feature1">
-                <a href="akoko.html">
-                    <img src="images/featureforhome/2.png" style="width: 100%;">
-                </a>
-            </section>
-
-            <section class="feature" id="feature2">
-                <a href="akub.html">
-                    <img src="images/featureforhome/1.png" style="width: 100%;">
-                </a>
-            </section>
-
-
-            <button onclick="backToTop('slideshow')" id="toTop" title="Back to top"> 🔝</button>
-            <img id="scrolldown" src="images/General/scrolldown.png">
-
-        </main>
-
-    </body>
+<a href="#" class="scroll-btn">Scroll down
+    <i class="ph-bold ph-arrow-bend-right-down"></i>
+</a>
+</body>
 </html>
