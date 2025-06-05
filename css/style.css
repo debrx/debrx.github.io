@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+html {
+    scroll-behavior: smooth;
+}
 * {
     box-sizing: border-box;
     padding: 0;
@@ -122,3 +125,82 @@ header {
 
     align-items: center;
 }
+
+
+.about {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 2rem 5rem 0 18rem;
+    gap: 1rem;
+}
+.about-img img {
+    width: 100%;
+    height: auto;
+}
+.about-text h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.about-text h3 {
+    position: relative;
+    padding-left: 6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.about-text h3::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background-color: #1e1e24;
+    left: 0;
+    top: 1rem;
+}
+.about-text p {
+    margin-bottom: 2rem;
+}
+
+article {
+    display: block;
+    unicode-bidi: isolate;
+}
+.about_card {
+    /*background: var(--color-bg-varient);*/
+    background: #0a2472;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: var(--transition);
+}
+.about_cards {
+    grid-gap: 1.5rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+.about_name {
+    align-items: center;
+    display: flex
+;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.about_icon {
+    color: white;
+    font-size: 1.4rem;
+}
+
+/*.div2, .div1 {*/
+/*    grid-area: 1 / 2 / 2 / 3;*/
+/*}*/
+.talk_btn .btn {
+    font-size: 1rem; /* or try 1.25rem for a bigger size */
+}
+
+
+
