@@ -125,6 +125,7 @@ header {
 
     align-items: center;
 }
+/*ABOUT SECTION*/
 
 
 .about {
@@ -135,6 +136,15 @@ header {
     align-items: center;
     padding: 2rem 5rem 0 18rem;
     gap: 1rem;
+}
+.about-me {
+    aspect-ratio: 1 / 1;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(135deg, #0a2472, #7daffb);
+    border-radius: 2rem;
+    place-items: center;
+    margin-left: -65px;
 }
 .about-img{
     background-size: cover;
@@ -151,6 +161,10 @@ header {
 }
 .about-img:hover{
     transform: rotate(0deg);
+}
+.about-text{
+    margin-left: -155px;
+    width: 650px;
 }
 .about-text h2 {
     font-size: 3rem;
@@ -187,7 +201,11 @@ article {
     border-radius: 1rem;
     padding: 2rem;
     transition: var(--transition);
-    outline: 2px solid lime;
+}
+.about_card:hover{
+    cursor: default;
+    background: transparent;
+    border-color: var(--color-transparent-varient);
 }
 .about_cards {
     grid-gap: 1.5rem;
@@ -215,5 +233,46 @@ article {
     font-size: 1rem; /* or try 1.25rem for a bigger size */
 }
 
-
+/*experience section*/
+.container {
+    margin: 0px auto;
+    width: 75%;
+}
+.experience_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.experience_details {
+    display: flex;
+    gap: 1rem;
+}
+.experience_container > div {
+    background: #0a2472;
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 2rem;
+    padding: 2.4rem 5rem;
+    transition: var(--transition);
+}
+.experience_content, .experience_content2 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+.experience_content {
+    row-gap: 1rem;
+}
+/*section {*/
+/*    margin-top: 8rem;*/
+/*}*/
+section > h2 {
+    color: var(--color-primary);
+    margin-bottom: 3rem;
+}
+section > h2, section > h5 {
+    text-align: center;
+}
 
