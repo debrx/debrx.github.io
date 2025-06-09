@@ -377,7 +377,7 @@ img { /*image within experience cards*/
     text-align: center;
 }
 .club_review {
-    color: lightslategray;
+    color: #DEE3FC;
     display: block;
     font-weight: 300;
     margin: .8rem auto 0;
